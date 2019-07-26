@@ -1,4 +1,4 @@
-// referencing variables of delegator
+// creating tasks from single thread using single
 #include <omp.h>
 #include <stdio.h>
 
@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     {
         int tsum = 0, tid = omp_get_thread_num();
         printf("[TID:%d], A(tsum)=%x\n", omp_get_thread_num(), &tsum);
-        #pragma omp for
+        #pragma omp single
         for (i = 0 ; i < ARR_SIZE ; i+= STEP_SIZE) {
             int j, start = i, end = i + STEP_SIZE - 1;
         
@@ -40,11 +40,9 @@ int main(int argc, char** argv) {
                 printf("[TID:%d], Task Sum(%d, %d), A(tsum)=%x\n", tid, start, end, &tsum);
                 
                 #pragma omp critical
-                    tsum += psum;
+                    sum += psum;
             }
         }
-        #pragma omp critical
-        sum += tsum;
     }
 
     t2 = omp_get_wtime();
