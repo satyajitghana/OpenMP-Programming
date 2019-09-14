@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shadowleaf/OpenMP/assignment/MatMul.cpp
+MatMul.hpp
+/home/shadowleaf/OpenMP/assignment/MatMul.hpp
+omp.h
+-
+stdio.h
+-
+
+/home/shadowleaf/OpenMP/assignment/MatMul.hpp
+

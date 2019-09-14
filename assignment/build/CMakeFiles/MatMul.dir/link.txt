@@ -1,0 +1,1 @@
+/bin/g++  -fopenmp -g  -rdynamic CMakeFiles/MatMul.dir/main.cpp.o CMakeFiles/MatMul.dir/MatMul.cpp.o  -o MatMul 

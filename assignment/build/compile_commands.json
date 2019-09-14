@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/shadowleaf/OpenMP/assignment/build",
+  "command": "/bin/g++    -fopenmp -g   -o CMakeFiles/MatMul.dir/main.cpp.o -c /home/shadowleaf/OpenMP/assignment/main.cpp",
+  "file": "/home/shadowleaf/OpenMP/assignment/main.cpp"
+},
+{
+  "directory": "/home/shadowleaf/OpenMP/assignment/build",
+  "command": "/bin/g++    -fopenmp -g   -o CMakeFiles/MatMul.dir/MatMul.cpp.o -c /home/shadowleaf/OpenMP/assignment/MatMul.cpp",
+  "file": "/home/shadowleaf/OpenMP/assignment/MatMul.cpp"
+}
+]
